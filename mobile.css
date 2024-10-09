@@ -1,0 +1,380 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  height: 50px;
+  background-color: #ffffff;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  gap: 10px;
+}
+
+.content1 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+  grid-auto-flow: column;
+  background-color: #eeeeee;
+  overflow-x: scroll;
+  overscroll-behavior-inline: contain;
+}
+
+.content1::-webkit-scrollbar {
+  display: none;
+}
+
+.contanier {
+  max-width: 1200px;
+  margin: auto;
+}
+.stories {
+  height: 70px;
+  width: 100%;
+  background-color: #eeeeee;
+}
+.stories .s {
+  height: 40px;
+  width: 40px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  margin-top: 12px;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  background-color: rgb(255, 255, 255);
+}
+.imgs {
+  background-color: #eeeeee;
+  width: 1200px;
+  height: 170px;
+  border-radius: 12px;
+  margin-top: 26px;
+}
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.allpoints {
+  display: flex;
+  gap: 10px;
+}
+.points {
+  width: 10px;
+  height: 10px;
+  background-color: #eeeeee;
+  border-radius: 50%;
+}
+.bgslide {
+  background-color: #d9d9d9;
+  border-radius: 12px;
+  width: 100px;
+  height: 10px;
+}
+.content2 {
+  display: flex;
+  justify-content: space-between;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.tallboxm {
+  background-color: #eeeeee;
+  width: 590px;
+  height: 450px;
+  border-radius: 12px;
+  margin-top: 50px;
+}
+.tallbox {
+  background-color: #eeeeee;
+  width: 590px;
+  height: 450px;
+  border-radius: 12px;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.smallboxm {
+  background-color: #f6f6f6;
+  width: 590px;
+  height: 300px;
+  border-radius: 12px;
+  margin-top: 50px;
+}
+.midbox1 {
+  background-color: #d9d9d9;
+  width: 590px;
+  height: 330px;
+  border-radius: 12px;
+}
+.midbox2 {
+  background-color: #f6f6f6;
+  width: 590px;
+  height: 300px;
+  border-radius: 12px;
+}
+
+@media screen and (max-width: 1250px) {
+  .contanier {
+    max-width: 1150px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .contanier {
+    max-width: 1000px;
+  }
+  .imgs {
+    width: 1000px;
+    height: 170px;
+  }
+  .tallboxm {
+    width: 480px;
+    height: 400px;
+  }
+  .midbox1 {
+    width: 480px;
+    height: 300px;
+  }
+  .tallbox {
+    width: 480px;
+    height: 400px;
+  }
+
+  .smallboxm {
+    width: 480px;
+    height: 250px;
+  }
+  .midbox2 {
+    width: 480px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .contanier {
+    max-width: 900px;
+  }
+
+  .imgs {
+    width: 1000px;
+    height: 170px;
+  }
+  .tallboxm {
+    width: 430px;
+    height: 450px;
+  }
+  .tallbox {
+    width: 430px;
+    height: 450px;
+  }
+
+  .midbox1 {
+    width: 430px;
+    height: 330px;
+  }
+
+  .smallboxm {
+    width: 430px;
+    height: 250px;
+  }
+  .midbox2 {
+    width: 430px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .contanier {
+    max-width: 800px;
+  }
+  .imgs {
+    width: 800px;
+    height: 170px;
+  }
+  .tallboxm {
+    width: 380px;
+    height: 450px;
+  }
+  .tallbox {
+    width: 380px;
+    height: 450px;
+  }
+
+  .midbox1 {
+    width: 380px;
+    height: 330px;
+  }
+  .smallboxm {
+    width: 380px;
+    height: 250px;
+  }
+  .midbox2 {
+    width: 380px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 801px) {
+  .contanier {
+    max-width: 700px;
+  }
+  .imgs {
+    width: 700px;
+    height: 170px;
+  }
+
+  .tallboxm {
+    width: 330px;
+    height: 450px;
+  }
+  .tallbox {
+    width: 330px;
+    height: 450px;
+  }
+
+  .midbox1 {
+    width: 330px;
+    height: 330px;
+  }
+  .smallboxm {
+    width: 330px;
+    height: 250px;
+  }
+  .midbox2 {
+    width: 330px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .contanier {
+    max-width: 600px;
+  }
+
+  .imgs {
+    width: 600px;
+    height: 170px;
+  }
+
+  .tallboxm {
+    width: 280px;
+    height: 450px;
+  }
+  .tallbox {
+    width: 280px;
+    height: 450px;
+  }
+
+  .midbox1 {
+    width: 280px;
+    height: 330px;
+  }
+  .smallboxm {
+    width: 280px;
+    height: 250px;
+  }
+  .midbox2 {
+    width: 280px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contanier {
+    max-width: 500px;
+  }
+
+  .imgs {
+    width: 500px;
+    height: 170px;
+  }
+
+  .tallboxm {
+    width: 230px;
+    height: 450px;
+  }
+  .tallbox {
+    width: 230px;
+    height: 450px;
+  }
+
+  .midbox1 {
+    width: 230px;
+    height: 330px;
+  }
+  .smallboxm {
+    width: 230px;
+    height: 250px;
+  }
+  .midbox2 {
+    width: 230px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .contanier {
+    max-width: 400px;
+  }
+
+  .imgs {
+    width: 400px;
+    height: 170px;
+  }
+
+  .tallboxm {
+    width: 190px;
+    height: 252px;
+  }
+  .tallbox {
+    width: 190px;
+    height: 252px;
+  }
+
+  .midbox1 {
+    width: 190px;
+    height: 154px;
+  }
+  .smallboxm {
+    width: 190px;
+    height: 154px;
+  }
+  .midbox2 {
+    width: 190px;
+    height: 220px;
+  }
+}
+@keyframes sl {
+  0% { background-position: 200% 0 }
+  100% { background-position: 0 0 }
+}
+
+.imgs,
+.tallboxm,
+.tallbox,
+.midbox1,
+.smallboxm,
+.midbox2 {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: sl 1.5s infinite linear;
+}
+
+@keyframes fors {
+  0% { background-position: 0 0 }
+  100% { background-position: 0 200% }
+}
+
+.s {
+  background: linear-gradient(180deg, #d9d9d9 0%, #e0e0e0 50%, #d9d9d9 75%);
+  background-size: 100% 200%;
+  animation: fors 1.5s infinite linear;
+}

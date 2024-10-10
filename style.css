@@ -74,3 +74,20 @@ footer {
   background-color: #393e46;
   min-height: 234px;
 }
+
+
+@media screen and (max-width: 500px) {
+  .contaner {
+    max-width: 400px;
+  }
+  .links ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+  }
+
+  .links ul li {
+    margin-top: 10px;
+  }
+}
+
